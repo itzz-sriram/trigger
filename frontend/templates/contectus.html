@@ -1,0 +1,51 @@
+{% extends 'layout/main.html' %}
+{% block title %}
+Contect Us
+{% endblock title %}
+
+
+{% block content %}
+<main class="main-content">
+    <div class="text-dark bg-light">
+        <div class="container" style="min-height: 600px;">
+            <div class="col ms-5">
+                <h2 class="pt-4">Contect Form</h2>
+                <form id="form" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row d-block">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <p>{{form.email}}</p>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="inputname">Name</label>
+                            <p>{{form.name}}</p>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="mobile">Mobile</label>
+                            <p>{{form.mobile}}</p>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <p>{{form.city}}</p>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="course">Course Name</label>
+                            <p>{{form.course}}</p>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Batch</label>
+                            <p>{{form.batch}}</p>
+                        </div>
+                        <button class="btn btn-success my-3">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <p class="ms-5 my-0">Already User? <a href="{% url 'login' %}" class="text-success">Login</a></p>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}

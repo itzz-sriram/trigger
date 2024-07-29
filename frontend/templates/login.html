@@ -1,0 +1,25 @@
+{% extends 'layout/main.html' %}
+    {% block title %}
+    Login
+    {% endblock title %}
+
+
+    {% block content %}
+<main class="main-content text-light mt-5" style="min-height: 700px;">
+    <div class="container">
+        <div class="form-row d-block">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+        
+            <div class="form-group col-md-6">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="inputname" placeholder="password">
+            </div>
+        </div>
+        <button class="btn btn-primary">Login</button>
+        <p class="text-secondary">New User? <a href="{% url 'contect' %}" class="text-primary">Register</a></p>
+    </div>
+</main>
+    {% endblock content %}

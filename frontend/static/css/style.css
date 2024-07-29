@@ -1,0 +1,179 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-family: monospace;
+    background: rgb(6,38,105);
+    background: linear-gradient(110deg, rgb(77, 6, 105) 1%, rgb(0, 22, 78) 40%, rgb(28, 2, 88) 61%, rgb(19, 2, 56) 98%);
+}
+
+/* navbar  */
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+
+/* main content */
+main {
+    padding-top: 5rem;
+}
+
+.main-content {
+    background-color:transparent;
+    padding: 4rem 0 0 0 ;
+}
+
+/*hero section*/
+.hero {
+    padding: 6rem 0;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    font-size: 1.1rem;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* card  */
+
+.card {
+    border: none;
+    transition: transform 0.6s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    height: 80px;
+    overflow: hidden;
+}
+
+/* testimonial  */
+
+.testimonial-item {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    height: 300px;
+}
+
+.testimonial-item info {
+    font-size: 1.25rem;
+    font-style: italic;
+
+}
+.testimonial-item info p{
+    overflow: hidden;
+    height: 150px;
+}
+
+.testimonial-item info footer {
+    margin-top: 1rem;
+    height: 5rem;
+    border-radius: 20px;
+}
+
+
+/* trusted companies  */
+
+#trusted-companies {
+    padding: 4rem 0;
+    background-color: transparent;
+    color: rgb(36, 134, 195);
+}
+
+#trusted-companies h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+/* frequently asked question */
+
+
+
+
+/* footer */
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
+
+/* $$$$$$$$$$$$ contect us $$$$$$$$$$$$*/
+
+
+
+/* Responsive adjustments 
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    main {
+        padding-top: 4rem;
+    }
+}
+*/

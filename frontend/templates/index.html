@@ -1,0 +1,338 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand border px-3" href="#">Tr!gger</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Contect Us</a>
+                    </li>
+
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link btn btn-success" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+<!-- Main -->
+{% extends 'layout/main.html' %}
+{% load static %}
+
+{% block title %}
+Tr!gger | Upsk!ll Now
+{% endblock title %}
+
+{% block content %}
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <h1 class="text-left">Welcome to <span class="text-success"
+                            style="font-family: 'Courier New', Courier, monospace; letter-spacing: 7px;">TRIGGER</span>
+                    </h1>
+                    <h3 class="pb-5 text-left">We help to gain Real-World Experience</h3>
+                    <p class="text-left">"Our e-learning software platform simplifies course creation and delivery
+                        with robust tools
+                        for interactive content and real-time collaboration. Designed for institutions and
+                        educators, it offers versatile learning formats to enhance student engagement and learning
+                        outcomes effectively."</p>
+                    <a href="#featured-courses" class="btn btn-light mb-5">Get Started</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'images/pngwing.com.png' %}" alt="Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  courses -->
+    <section class="main-content" id="featured-courses">
+        <div class="container">
+            <h2 class="pb-3 text-light">Featured Courses</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="{% static 'images/web.png' %}" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development(basic)</h5>
+                            <p class="card-text">Learn the basics of web development with this introductory course.
+                            </p>
+                            <a href="{% url 'contect' %}" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="{% static 'images/python.png' %}" class="card-img-top border border-dark"
+                            alt="Course Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">Advanced techniques and best practices in programming.</p>
+                            <a href="{% url 'contect' %}" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="{% static 'images/data science.png' %}" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Scientist</h5>
+                            <p class="card-text">Dive into data science with practical exercises and real-world
+                                scenarios.</p>
+                            <a href="{% url 'contect' %}" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="{% static 'images/blockchain.png' %}" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <h5 class="card-title">BlockChain Developer</h5>
+                            <p class="card-text">Blockchain is a fascinating technology! At its core, a blockchain
+                                is a decentralized and distributed digital ledger that records transactions across
+                                many computers
+                            </p>
+                            <a href="{% url 'contect' %}" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="{% static 'images/robotics.png' %}" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Robotics</h5>
+                            <p class="card-text">Robotics is a fascinating and rapidly evolving field that combines
+                                elements of mechanical engineering, electrical engineering, and computer science to
+                                design, build, and operate robots</p>
+                            <a href="{% url 'contect' %}" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="{% static 'images/web.png' %}" class="card-img-top" alt="Course Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Full Stack Developer</h5>
+                            <p class="card-text">Learn the advanced topics of web development with real-world
+                                scenarios.</p>
+                            <a href="{% url 'contect' %}" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- why we choose Section -->
+    <section id="how">
+        <div>
+            <h2 class="text-center text-white">How We Trigger Yourself</h2>
+            <div class="p-5 text-white">
+                <div class="container">
+                    <h4 class="text-left py-3">Quality Content</h4>
+                    <p class="text-left">Expert Instructors: Our courses are designed and taught by industry
+                        professionals with years of experience.</p>
+                    <p class="text-left">Up-to-Date Material: We provide the latest information and skills relevant
+                        to today's job market.</p>
+                </div>
+                <div class="container">
+                    <h4 class="text-right py-3">Flexible Learning</h4>
+                    <p class="text-right">Mobile Friendly: Study on the go with our optimized mobile platform.</p>
+                    <p class="text-right">Anywhere: Learn at your own pace with 24/7 access to course materials.</p>
+                </div>
+                <div class="container">
+                    <h4 class="text-left py-3">Engaging Experience</h4>
+                    <p class="text-left">Interactive Content: Engage with quizzes, interactive simulations, and
+                        hands-on projects.</p>
+                    <p class="text-left">Community Support: Join discussions, ask questions, and network with peers
+                        and instructors.</p>
+                </div>
+                <div class="container">
+                    <h4 class="text-right py-3">Certification and Career Support</h4>
+                    <p class="text-right">Recognized Certificates: Earn certificates that can enhance your resume
+                        and LinkedIn profile.</p>
+                    <p class="text-right">Career Resources: Access job boards, resume-building tools, and career
+                        advice.</p>
+                </div>
+                <div class="container">
+                    <h4 class="text-left py-3">Innovative Features</h4>
+                    <p class="text-left">Cutting-Edge Technology: Benefit from the latest e-learning tools and
+                        technologies.</p>
+                    <p class="text-left">Gamification: Enjoy learning through gamified elements that make education
+                        fun and engaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Companies -->
+
+    <section id="trusted-companies">
+        <div class="container">
+            <h2>Trusted Companies</h2>
+            <marquee behavior=scroll direction="left" scrollamount="5" loop="3">
+                
+                    <p class="text-success">
+                        <i class="fa-brands fa-google" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-linkedin" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-apple" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-meta" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-microsoft" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-spotify" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-telegram" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-twitter" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-github" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-amazon" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-instagram" style="font-size: 50px; padding-right:10px;"></i>
+                    
+                        <i class="fa-brands fa-python" style="font-size: 50px; padding-right:10px;"></i>
+                    </p>
+            </marquee>
+        </div>
+    </section>
+
+
+    <!-- Testimonials  -->
+    <section>
+        <div class="container">
+            <h2 class="text-white pb-5">Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <info class="info">
+                            <p class="mb-0">"Trigger transformed my career! The courses are incredibly
+                                well-organized and the instructors are top-notch."</p>
+                            <footer class="info-footer">Jane Doe,Web Developer</footer>
+                        </info>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <info class="info">
+                            <p class="mb-0">"I gained so much valuable knowledge from the advanced courses. Highly
+                                recommended for professionals looking to upskill."</p>
+                            <footer class="info-footer">John Smith,Data Scientist</footer>
+                        </info>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <info class="info">
+                            <p class="mb-0">"The variety of courses offered is impressive. I found exactly what I
+                                needed to improve my programming skills."</p>
+                            <footer class="info-footer">Johnson,Software Engineer</footer>
+                        </info>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Frequently asked question-->
+    <section>
+        <div class="container my-5">
+            <h2 class="text-center text-white mb-4">Frequently Asked Questions</h2>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                How the training will be conducted?
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Training will be conducted in a variety of ways, such as live interactive sessions as well
+                            as recorded sessions and the duration will be as per the Schedule. These methods will ensure
+                            an engaging and interactive learning experience.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Do we need any software or hardware for the sessions?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            No worries! You won't need any specific software or hardware for the training sessions. Just
+                            make sure you have a stable internet connection and a device to access the online modules
+                            and virtual classes.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                What are the prerequisites of the program?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            There are no specific prerequisites. Nevertheless, having basic skills in accordance with
+                            the course would be a good starting point.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+{% endblock content %}
+
+</html>
